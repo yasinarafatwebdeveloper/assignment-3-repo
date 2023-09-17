@@ -29,20 +29,20 @@
 <!-- header is start -->
 
 <header>
-  <div class="flex justify-between items-center mx-20 my-20 bg-red-500 p-5 rounded-full text-white">
+  <div class="flex justify-between items-center lg:mx-20 lg:my-20 md:mx-20 md:my-20 mx-2 my-2 bg-red-500 p-5 rounded-full text-white">
     <div>
       <nav>
         <ul class="flex ">
-          <li class="px-4 mx-4">
+          <li class="lg:px-4 lg:mx-4 md:px-4 md:py-4 px-1 py-1">
             <a href="">Home</a>
           </li>
-          <li class="px-4 mx-4">
+          <li class="lg:px-4 lg:mx-4 md:px-4 md:py-4 px-1 py-1">
             <a href="">About Us</a>
           </li>
-          <li class="px-4 mx-4">
+          <li class="lg:px-4 lg:mx-4 md:px-4 md:py-4 px-1 py-1">
             <a href="">Shop</a>
           </li>
-          <li class="px-4 mx-4">
+          <li class="lg:px-4 lg:mx-4 md:px-4 md:py-4 px-1 py-1">
             <a href="">All Fruits</a>
           </li>
         </ul>
@@ -50,11 +50,11 @@
     </div>
     <div class="flex items-center ">
       <img src="images/logo.png" alt="">
-      <h1 class="mx-2 text-2xl">Fruit Burst</h1>
+      <h1 class="lg:mx-2 md:mx-2 mx-1 text-2xl">Fruit Burst</h1>
     </div>
-    <div class="mx-2">
+    <div class="lg:mx-2 md:mx-2 mx-20">
       <form>
-        <input type="search" placeholder="Search...">
+        <input  type="search" placeholder="Search">
       
       </form>
 
@@ -91,7 +91,7 @@
 
 <main>
     <!-- slider work is start -->
-    <div class="carousel w-full lg:w-full h-auto my-10 lg:h-auto ">
+    <div class="carousel w-full lg:w-full h-full lg:my-10 my-4 lg:h-full ">
 
         
         <div id="slide1" class="carousel-item relative w-full lg:w-full  ">
@@ -104,7 +104,7 @@
             <a href="#slide4" class="btn btn-circle">❮</a> 
 
             <div class="text-white text-7xl font-extrabold text-center leading-20">
-                <h1>Exotic tastes at your
+                <h1 class="text-7xl">Exotic tastes at your
                     <br>
                      doorstep</h1>
                      <p class="text-white text-xl font-medium">We supply highly quality organic products</p>
@@ -123,7 +123,7 @@
 
 
             
-            <div class="text-white text-7xl font-extrabold text-center leading-20">
+            <div class="text-white lg:text-7xl md:text-7xl text-xl lg:font-extrabold md:font-extrabold font-bold text-center leading-20">
                 <h1>Exotic tastes at your
                     <br>
                      doorstep</h1>
@@ -244,8 +244,33 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <p>Details</p>
-                
+            
+<!-- modal open here-->
+            
+          <!-- The button to open modal -->
+<label for="my_modal_7" class="btn">Details</label>
+
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+      
+      </div>
+    </div>
+ 
+  </div>
+   <label class="modal-backdrop" for="my_modal_7">Close</label> 
+</div>
+
+          
+<!--modal end here  -->
                 </div>
               </div>
 
@@ -255,7 +280,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-                  <p>Apples</p>
+                  <p>Orenges</p>
 
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -264,8 +289,21 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <p>Details</p>
-                
+                         <!-- <button>details</button> -->
+                  <!-- The button to open modal -->
+<label for="my_modal_7" class="btn">open modal</label>
+
+
+
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <!-- <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">This modal works with a hidden checkbox!</p> -->
+    <img src="images/fruit7.png" alt="">
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
                 </div>
               </div>
 
@@ -275,7 +313,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-                  <p>Apples</p>
+                  <p>Flowers</p>
 
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -284,18 +322,17 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <p>Details</p>
-                
+  <button>details</button>         
                 </div>
               </div>
 
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                  <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-                  <p>Apples</p>
+                  <p>Bananes</p>
 
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -304,8 +341,7 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                  <p>Details</p>
-                
+    <button>Details</button>          
                 </div>
 
               </div> 
